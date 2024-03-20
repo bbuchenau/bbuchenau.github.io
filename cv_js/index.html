@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOXICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Ben Buchenau</title>
+    </head>
+    <body>
+        <!--========== HEADER (so far, mobile only)==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav_logo">Ben Buchenau</a>
+
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link active-link">
+                                <i class="bx bx-home-alt nav_icon"></i>Home
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#profile" class="nav_link">
+                                <i class="bx bx-user nav_icon"></i>Profile
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#education" class="nav_link">
+                                <i class="bx bx-book-open nav_icon"></i>Education
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#skills" class="nav_link">
+                                <i class="bx bx-award nav_icon"></i>Skills
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#experience" class="nav_link">
+                                <i class="bx bx-briefcase nav_icon"></i>Experience
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#projects" class="nav_link">
+                                <i class="bx bx-code-alt nav_icon"></i>Projects
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+
+            </nav>
+        </header>
+
+        <main class="l-main bd-container">
+            <!-- All elements within this div are generated in PDF -->
+            <div class="resume" id="area-cv">
+                <div class="resume_left">
+                    <!--========== HOME ==========-->
+                    <section class="home" id="home">
+                        <div class="home_container section bd-grid">
+                            <div class="home_data bd-grid">
+                                <img src="assets/img/Bewerbungsfoto nett.png" alt="" class="home_img">
+                                
+                                <h1 class="home_title"><b>BEN BUCHENAU</b></h1>
+                                <h3 class="home_profession">Geoinformatics Student</h3>
+
+                                <!-- Button to generate and download the PDF (only for small screens) -->
+                                <div>
+                                    <a download="" href="assets/pdf/ben_buchenau_cv.pdf" class="home_button-mobile">Download</a>
+                                </div>
+                            </div>
+
+                            <div class="home_address bd-grid">
+                                <span class="home_information address">
+                                    <i class="bx bx-map home_icon"></i>Mülheim, 51063 Köln
+                                    <img class='map' src="assets/img/cologne.png">
+                                </span>
+                                <span class="home_information" id="email" onclick="copyMail()">
+                                    <i class="bx bx-envelope home_icon"></i>
+                                    <span class="home_text" id="email-text">buchenau.ben@web.de</span>
+                                    <span class="tooltiptext" id="tooltip">Click to copy</span>
+                                </span>
+                                <span class="home_information" id="phone">
+                                    <i class="bx bx-phone home_icon"></i>Just ask me!
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- LinkedIn button -->
+                        <i class="bx bxl-linkedin linkedin" title="Visit LinkedIn" id="linkedin-button" 
+                        onClick="parent.open('https://www.linkedin.com/in/ben-buchenau-b86076ba')"></i>
+
+                        <!-- Download PDF button (only for large screens) -->
+                        <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+
+                        <!-- Colorize button -->
+                        <i class='bx bx-palette colorize' title="Colorize" id="colorize-button"></i>
+ 
+                    </section>          
+                    
+                    <!--========== PROFILE ==========-->
+                    <section class="profile section" id="profile">
+                        <h2 class="section-title">Profile</h2>
+
+                        <p class="profile_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id libero risus. Nullam placerat a leo et hendrerit. Aenean eu tincidunt enim. Aliquam erat volutpat. Nam eu sapien semper eros efficitur feugiat ac a elit. Maecenas leo nisl, iaculis a ornare in, ultrices nec quam.</p>
+                    </section>
+                    
+                    <!--========== EDUCATION ==========-->
+                    <section class="education section" id="education">
+                        <h2 class="section-title">Education</h2>
+
+                        <div class="education_container bd-grid">
+                            <div class="education_content">
+                                <div class="education_time">
+                                    <span class="education_rounder"></span>
+                                    <span class="education_line"></span>
+                                </div>
+
+                                <div class="education_data bd-grid">
+                                    <h3 class="education_title">M.Sc. in Geoinformatics</h3>
+                                    <span class="education_studies">University of Münster</span>
+                                    <span class="education_year">since 2020</span>
+                                </div>
+                            </div>
+
+                            <div class="education_content">
+                                <div class="education_time">
+                                    <span class="education_rounder"></span>
+                                    <span class="education_line"></span>
+                                </div>
+
+                                <div class="education_data bd-grid">
+                                    <h3 class="education_title">B.Sc. in Geoscience</h3>
+                                    <span class="education_studies">University of Cologne</span>
+                                    <span class="education_year">2015-2019</span>
+                                </div>   
+                            </div>
+
+                            <div class="education_content">
+                                <div class="education_time">
+                                    <span class="education_rounder"></span>
+                                    <!-- <span class="education_line"></span> -->
+                                </div>
+
+                                <div class="education_data bd-grid">
+                                    <h3 class="education_title">Abitur</h3>
+                                    <span class="education_studies">Königin-Luise-Gymnasium</span>
+                                    <span class="education_year">2005-2013</span>
+                                </div>   
+                            </div>
+
+                        </div>
+                    </section>
+
+
+                    <!--========== SKILLS  ==========-->
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">Skills</h2>
+
+                        <div class="skills_content bd-grid">
+                            <ul class="skills_data">
+                                <li class="skills_name hover_skill good">
+                                    <span class="skills_circle"></span>Affinity
+                                </li>
+                                <li class="skills_name">
+                                    <span class="skills_circle hover_skill basic"></span>QGIS
+                                </li>
+                                <li class="skills_name">
+                                    <span class="skills_circle"></span>R
+                                </li>
+                            </ul>
+                            <ul class="skills_data">
+                                <li class="skills_name">
+                                    <span class="skills_circle"></span>HTML&CSS
+                                </li>
+                                <li class="skills_name">
+                                    <span class="skills_circle"></span>JS
+                                </li>
+                                <li class="skills_name">
+                                    <span class="skills_circle"></span>Python
+                                </li>
+                            </ul>
+                        </div>
+
+                    </section>
+
+                </div>
+
+                <div class="resume_right">
+                    <!--========== EXPERIENCE ==========-->
+                    <section class="experience section" id="experience">
+                       <h2 class="section-title">Experience</h2> 
+
+                        <div class="experience_container bd-grid">
+                            <div class="experience_content">
+                                <div class="experience_time">
+                                    <span class="experience_rounder"></span>
+                                    <span class="experience_line"></span>
+                                </div>
+
+                                <div class="experience_data bd-grid">
+                                    <span class="experience_company">since May 2021 | Bonn International Center for Conflict Studies, Bonn</span>
+                                    <h3 class="experience_title">STUDENT ASSISTANT <i class='bx bx-chevrons-down' id="arrow"></i></h3>
+                                    <p class="experience_description collapsible">At BICC, I am analyzing and visualizing quantitative data sets for different research projects, making use of statistical software, graphic programs & web development.</p>
+                                </div>
+                            </div>
+
+                            <div class="experience_content">
+                                <div class="experience_time">
+                                    <span class="experience_rounder"></span>
+                                    <span class="experience_line"></span>
+                                </div>
+
+                                <div class="experience_data bd-grid">
+                                    <span class="experience_company">Apr 2020 - Aug 2020 | Labor Dr. Wisplinghoff, Köln</span>
+                                    <h3 class="experience_title">LABORATORY WORKER <i class='bx bx-chevrons-down' id="arrow"></i></h3>
+                                    <p class="experience_description collapsible">For Wisplinghoff, I performed laboratory work in the PCR section for Covid-19 testing and later managed the night-shift test lab routine.</p>
+                                </div>
+                            </div>
+
+                            <div class="experience_content">
+                                <div class="experience_time">
+                                    <span class="experience_rounder"></span>
+                                    <span class="experience_line"></span>
+                                </div>
+
+                                <div class="experience_data bd-grid">
+                                    <span class="experience_company">Nov 2018 - Mar 2020 | Sprengnetter GmbH, Köln</span>
+                                    <h3 class="experience_title">STUDENT ASSISTANT <i class='bx bx-chevrons-down' id="arrow"></i></h3>
+                                    <p class="experience_description collapsible">At Sprengnetter, I worked in the geodata team conducting geopraphic analyses, digitalizing spatial information and supplying customers with real estate information.</p>                                </div>
+                            </div>
+
+                            <div class="experience_content">
+                                <div class="experience_time">
+                                    <span class="experience_rounder"></span>
+                                    <span class="experience_line"></span>
+                                </div>
+
+                                <div class="experience_data bd-grid">
+                                    <span class="experience_company">Jun 2018 - Aug 2018 | Helmholtz-Geoforschungszentrum, Potsdam</span>
+                                    <h3 class="experience_title">INTERN <i class='bx bx-chevrons-down' id="arrow"></i></h3>
+                                    <p class="experience_description collapsible">As an intern at Helmholtz-GFZ, I carried out practical laboratory work as well as GIS analyses and learned about geosimulation modelling and microscopy.</p>                                </div>
+                            </div>
+
+                            <div class="experience_content">
+                                <div class="experience_time">
+                                    <span class="experience_rounder"></span>
+                                    <span class="experience_line"></span>
+                                </div>
+
+                                <div class="experience_data bd-grid">
+                                    <span class="experience_company">Jan 2017 - May 2018 | Fraunhofer-Gesellschaft, St. Augustin</span>
+                                    <h3 class="experience_title">STUDENT ASSISTANT <i class='bx bx-chevrons-down' id="arrow"></i></h3>
+                                    <p class="experience_description collapsible">For Fraunhofer, I worked in international business development, research marketing, institute communication and the planning of events.</p>                                </div>
+                            </div>
+
+                            <div class="experience_content">
+                                <div class="experience_time">
+                                    <span class="experience_rounder"></span>
+                                    <span class="experience_line"></span> 
+                                </div>
+
+                                <div class="experience_data bd-grid">
+                                    <span class="experience_company">May 2015 - Dec 2016 | RLE International Group, Köln</span>
+                                    <h3 class="experience_title">WORKING STUDENT <i class='bx bx-chevrons-down' id="arrow"></i></h3>
+                                    <p class="experience_description collapsible">At RLE, I mainly translated English to German texts and vice versa.</p>                                </div>
+                            </div>
+
+                            <div class="experience_content">
+                                <div class="experience_time">
+                                    <span class="experience_rounder"></span>
+                                    <!-- <span class="experience_line"></span> -->
+                                </div>
+
+                                <div class="experience_data bd-grid">
+                                    <span class="experience_company">before May 2015</span>
+                                    <h3 class="experience_title">PREVIOUS POSITIONS <i class='bx bx-chevrons-down' id="arrow"></i></h3>
+                                    <p class="experience_description collapsible">I have been an intern at Ford-Werke GmbH in spring 2015 and at simfy AG in early 2012. Inbetween that I worked for several restaurants and farmers in and outside of Germany.</p>                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </section>
+
+                    <!--========== PROJECTS ==========-->
+                    <section class="project section" id="projects">
+                        <h2 class="section-title">Projects</h2>
+
+                        <div class="project_container bd-grid">
+                            <div class="project_content">
+                                <h3 class="project_title">TRAFIG - Data visualization
+                                </h3>
+                                <p class="project_description">Visualizing the quantitative project results in interactive web maps and graphics</p>
+                            </div>
+                            <div class="project_content">
+                                <h3 class="project_title">Study Project - Simulating and Modelling</h3>
+                                <p class="project_description">Creating and algorithm to simulate shrub growth over one year in specific regions</p>
+                            </div>
+                            <div class="project_content">
+                                <h3 class="project_title">Bachelor Thesis - Implementation of a WebGIS</h3>
+                                <p class="project_description">Geographic Patterns in the German Music Landscape - A GIS-based analysis on Spotify streams</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--========== REFERENCES ==========-->
+                    <section class="references section" id="references">
+                        
+                    </section>
+
+                    <!--========== LANGUAGES ==========-->
+                    <section class="languages section">
+                        
+                    </section>
+                    
+                    <!--========== INTERESTS ==========-->
+                    <section class="interests section">
+                        
+                    </section>
+                </div>
+            </div>        
+        </main>
+
+        <!--========== BACKGROUND IMAGE ==========-->
+        <img src="/assets/img/background_sea.png" id="background" alt="">
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class="bx bx-up-arrow-alt scrolltop_icon"></i>
+        </a>
+
+        <!--========== MAP ==========-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7PRM6f7U1SnP5DIdhVROXijCn4XJmgTc&callback=initMap&v=weekly"
+        defer></script>
+
+        <!--========== HTML2PDF ==========-->
+        <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
